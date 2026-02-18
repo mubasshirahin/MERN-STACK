@@ -1,0 +1,44 @@
+
+.external{
+    color: rgb(255, 89, 89);
+    background-color: black;
+    display: inline-block;
+}
+
+#external{
+    color: rgb(255, 89, 89);
+    background-color: black;
+    display: inline-block;
+}
+
+.freshers{
+    background-color: aqua;
+}
+.heading{
+    background-color:rgb(200, 242, 190);
+}
+
+.one_two{
+    background-color: plum;
+}
+.pending{
+
+    background-color: rgb(247, 104, 104);
+}
+
+/* PSEUDO */
+
+ul li:nth-child(2){
+    color: rgb(234, 215, 11);
+}
+ul li:nth-last-child(3){    /*last theke 3rd */
+    color: rgb(234, 215, 11);
+}
+
+ul li:nth-of-type(2n + 1){
+    color: aqua;
+}
+
+.pending:hover{
+    background-color: peru;
+}

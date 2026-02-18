@@ -1,0 +1,44 @@
+
+h1{
+    color:rgb(220, 117, 39);
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-style:oblique;
+
+    text-align: center;
+    text-decoration: underline rgb(0, 0, 0) wavy 2px;  /*wavy, dotted,dashed use korar jonno age underline noile overline dite hbe*/
+    text-shadow: 4px 4px 5px black;
+    
+}
+
+.dummytext{
+    color: rgb(124, 137, 58);
+}
+.dummytext:hover{
+    background-color: black;
+    color: aliceblue;
+}
+
+.lorem{
+    text-transform: uppercase;
+}
+
+.name:hover{
+    background-color: brown;
+    text-shadow: none;
+    text-decoration: underline;
+}
+
+.wrapper{
+    border: black 4px solid;
+    background-color: rgb(192, 206, 231);
+    /* border-radius: 20px; */
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    
+}
+
+
+
+

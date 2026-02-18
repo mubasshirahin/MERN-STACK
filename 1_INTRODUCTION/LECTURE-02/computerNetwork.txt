@@ -1,0 +1,9 @@
+-> Network : Multiple Devices Conncted with each others.
+-> ISP : Internet Service Provider
+-> Modem : Digital to Analog and vice versa
+-> DN : Domain Name (google.com)
+-> URL : Uniform Resource Locator (www.google.com/iwhuqhiuofuifbn?sdfs?FSfsf)
+-> DNS : Domain Name System (DN -> IP adress e convert korake bole DNS--192.65.2.1)
+-> ISP --> Modem --> www.google.com --> IP (DNS) --> Data Packets --> Routing --> Server Request --> Data Packets --> Routing --> Response
+-> Protocol : Rulesbook
+

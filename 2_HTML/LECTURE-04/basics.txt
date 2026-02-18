@@ -1,0 +1,167 @@
+🧩 <article> — Standalone, reusable content
+✅ Use when:
+
+Blog post
+News item
+Forum post
+Product card
+Comment
+
+<article>
+  <h2>How CSS Works</h2>
+  <p>CSS controls layout and design.</p>
+</article>
+
+🧠 Trick:
+
+If you can copy–paste it somewhere else and it still makes sense, use <article>.
+
+❌ Don’t use for:
+
+Layout wrappers
+
+Small UI pieces
+
+🧭 <nav> — Navigation only
+✅ Use when:
+
+Main menu
+
+Sidebar menu
+
+Pagination
+
+Breadcrumbs
+
+<nav>
+  <a href="/">Home</a>
+  <a href="/blog">Blog</a>
+</nav>
+
+🧠 Trick:
+
+Screen readers skip nav quickly
+
+Helps SEO understand site structure
+
+❌ Don’t use for:
+
+Random links in content
+
+🧱 <header> — Introduction, not position
+✅ Use when:
+
+Title
+
+Logo
+
+Intro text
+
+Section heading
+
+<header>
+  <h1>My Website</h1>
+</header>
+
+🧠 Tricks:
+
+Can appear multiple times
+
+Can be inside <article> or <section>
+
+❌ Don’t use:
+
+For the whole page wrapper
+
+Inside <footer>, <address>
+
+🧩 <section> — Logical grouping
+✅ Use when:
+
+Content has a heading
+
+Topic-based grouping
+
+<section>
+  <h2>Features</h2>
+  <p>Fast and lightweight.</p>
+</section>
+
+🧠 Trick:
+
+No heading? Then you probably don’t need <section>.
+
+❌ Don’t use:
+
+As a generic container (use <div> instead)
+
+🔚 <footer> — Closing information
+✅ Use when:
+
+Author info
+
+Copyright
+
+Related links
+
+Meta info
+
+<footer>
+  <p>© 2026</p>
+</footer>
+
+🧠 Tricks:
+
+Can be used inside <article>
+
+Not just for bottom of page
+
+❌ Don’t use:
+
+For main content
+
+🏠 <address> — Author / contact info
+✅ Use when:
+
+Author name
+
+Email
+
+Company contact
+
+<address>
+  Written by Alex<br>
+  alex@mail.com
+</address>
+
+🧠 Trick:
+
+Often placed inside <article> footer
+
+❌ Don’t use:
+
+For random physical locations
+
+For business addresses alone
+
+📌 <aside> — Related but optional content
+✅ Use when:
+
+Sidebar
+
+Ads
+
+Related posts
+
+Author bio
+
+Tips
+
+<aside>
+  <h3>Related</h3>
+  <p>Read CSS next.</p>
+</aside>
+
+🧠 Trick:
+
+Remove it → page still works fine.

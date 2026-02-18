@@ -1,0 +1,68 @@
+
+.test{
+    border: 1px solid black;
+    width: 700px;
+    height: 300px;
+    background-image: url(https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3B4MTA1NzQwNC1pbWFnZS1qb2I2MzAtYV8xLmpwZw.jpg);
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    /*
+    AUTO -> Original Size
+    CONTAIN -> like amra kono chobir corner dhore jodi baraite thaki taile jotokkhn kono border touchj kortese na totokkhn expand hbe.ek side e border rouch hoile stop.other part remain gap.
+    COVER -> corner dhore tanle jototkkhn both side touch hocche na totokkhn expand.both side touch er fole kono side border er baire gele ga oita bad pore jabe.
+    */
+    text-align: center;
+    margin: auto;
+    
+}
+
+p{
+    /* normal */
+    color:black;
+    /* hex code */
+    /* #__ __ __*/
+    /* first 3 ghor dye color*/
+    color: #000000;
+    /* #__ __ __ __*/
+     /* last er ta dye opacity (alpha)*/
+    color: #00000085;
+    /* rgb */
+    /* rgb(__,__,__) */
+    color: rgb(100,100,100);
+    /* rgba */
+    color: rgba(100, 100, 100, 0.894);
+    /* hsl */
+    color: hsl(60, 99%, 49%);
+    /* hsla */
+    color: hsla(90, 4%, 9%, 0.683);
+
+}
+
+
+/* Gradient
+linear gradient
+radial gradient
+conic gradient
+*/
+
+body{
+    /*degree dye image rotate kora jay*/
+    background: linear-gradient(90deg,rgb(24, 0, 0),rgb(85, 85, 80));
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    /*
+    fixed -> fixed thakbe
+    scroll -> scroll korle gradient er moto change hbe color
+
+    */
+    
+    background: radial-gradient(rgb(24, 0, 0),rgb(85, 85, 80));
+
+    background: conic-gradient(gray,black);
+
+}
+
+
+/* We will genarate from gradeint Genarator*/

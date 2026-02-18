@@ -1,0 +1,7 @@
+Website -> Collection of webpages
+Webapps -> Run in Browser but gives a interface of an mobile app.
+
+Why we use index.html .Why not ahin.html
+-> We use index.html because it is the default file that web servers look for when a user visits a website without specifying a file name. When we deploy a website,
+ the server needs an entry point to load the application. By convention, most web servers automatically serve index.html as the starting page.
+It is not because index.html has higher priority, but because it is the standard default filename configured on most servers.

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- INTERNAL CSS     -->
+     <style>
+        /* USING CLASS */
+        .wrapper{ 
+            color: rgb(255, 89, 89);
+            background-color: black;
+            display: inline-block;
+
+        }
+        /* USING ID */
+        #wrapper{
+            color: rgb(255, 89, 89);
+            background-color: black;
+            display: inline-block;
+        }
+
+     </style>
+</head>
+<body>
+    <!-- INLINE CSS -->
+    <h1 style="color: rgb(255, 89, 89); background-color: black; display:inline;">AHiN</h1>
+    <br>
+    <br>
+    <!-- INTERNAL CSS -->
+    <div class="wrapper">
+        <h1>AHiN</h1>
+    </div>
+    <br>
+    <br>
+    <div id="wrapper">
+        <h1>AHiN</h1>
+    </div>
+    <br>
+    <br>
+
+    <!-- EXTERNAL CSS -->
+
+    <div class="external">
+        <h1>AHiN</h1>
+    </div>
+    <br>
+    <br>
+    <div id="external">
+        <h1>AHiN</h1>
+    </div>
+
+    <hr>
+
+    <div class="table">
+        <table border="1px">
+            <tr class="heading">
+                <th>SEMESTER</th>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>STATUS</th>
+            </tr>
+            <tbody class="freshers">
+            <tr>
+                <td rowspan="3">1.1</td>
+                <td>26</td>
+                <td>MARK</td>
+                <td>DONE</td>
+            </tr>
+            <tr>
+                <td>28</td>
+                <td>JOSH</td>
+                <td class="pending">PENDING</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>ADAM</td>
+                <td>DONE</td>
+            </tr>
+        </tbody>
+
+        <tbody class="one_two">
+            <tr>
+                <td rowspan="3">1.2</td>
+                <td>2</td>
+                <td>STEVE</td>
+                <td class="pending">PENDING</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>DAVID</td>
+                <td class="pending">PENDING</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>KUMAR</td>
+                <td>DONE</td>
+            </tr>
+        </tbody>
+
+        </table>
+    </div>
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
+
+     
+</body>
+</html>
+
+
+
+
+
+
+<!-- SELECTORS:
+1)TAG SELECTOR:
+    h1{
+        ---------
+    }
+
+    div{
+        ----------
+    }
+
+2)CLASS SELECTOR:
+    .wrapper{
+        ----------
+    }
+    .external{
+        ----------
+    }
+3)ID SELECTOR:
+    #wrapper{
+        -----------
+    }
+    #external{
+        -----------
+    }
+
+
+now question is when to use what..If we want to apply property to all with h1 or p tag,
+we use tag selector..if we want to apply on specific sections we use class.But if we want to 
+change like same class but adding a border on the second one..there we apply id selector.
+Class can be used in many div or anywhere.But id must be unique.Only one can use that. -->
