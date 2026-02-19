@@ -1,0 +1,82 @@
+/*UNIVERSAL SELECTION (*) 
+SELECT THE WHOLE PROJECT
+*/
+
+/*
+BEST PRACTICE -> TO ALWAYS WRITE THIS BEFORE WRITTING CSS
+*/
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.wrapper{
+    border: 1.5px solid black;
+    padding: 20px;
+    margin: 40px;
+}
+
+p{
+    border: 1px solid black;
+
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    /* padding : top right bottom left; */
+    padding: 10px 30px 10px 30px;
+    /* padding : top-bottom left-right */
+    padding : 10px 30px;
+    /* padding : top left-right bottom */
+    padding: 10px 30px 10px;
+
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    /* margin : top right bottom left; */
+    margin: 10px 30px 10px 30px;
+    /* margin : top-bottom left-right */
+    margin : 10px 30px;
+    /* margin : top left-right bottom */
+    margin: 10px 30px 10px;
+
+    margin: auto;   /* x axis borabor center e ni ashe*/
+    
+}
+
+h1{
+    border: 1px solid black;
+    width: 150px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+/*DESCENDANT SELECTORS
+->THIS WILL SIMPLY TELL THAT 
+SELECT ONLY THOSE H1 THAT HAS ID DISPLAYTEST
+*/
+#displaytest h1{
+    border: none;
+}
+
+/*
+display:
+->block : takes a full line,can set h,w
+->inline : stays in the same line,can't set h,w ***
+->inline-block : stay in the same line,but can set h,w
+
+*/
+
+span{
+    border: 1px solid black;
+    /* display: block; */
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    padding: 40px 0 0 0;
+    
+}
