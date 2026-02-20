@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    background-color : aqua;
+    border: 1px solid black;
+    width: 100px;
+    height: 40px;
+    text-align:center;
+    padding-top: 10px;
+
+}
+
+
+/*Flexbox default axis -> main axix ( x axis)
+*/
+
+
+/*
+main axis or row borabor kaj korle -> justify content
+cross axis or col borabor kaj korle -> first e direction change + align-items
+*/
+
+.container{
+    margin: auto;
+    display: flex;
+    /* float: right; */
+    /* justify-content: end;
+
+    flex-direction: column;
+    align-items: center; */
+    justify-content: center;
+    border: 3px solid red;
+    height: 200px;
+    width:600px;
+    justify-content: space-between;
+
+}
+
+
+.flexbox{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;  /* reverse the row */
+    /* flex-direction: column-reverse;*/
+
+    /* justify-content: center; */
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/*
+Space-Evenly : Space between all the items & space between first & last element with their closest border are same
+Space-Around : Space between all the items are same & space between the first & last element with their closest border are same
+Space-Between : first & last items are stick to the border & space between all the items are same
+*/
+
+#box1{
+    align-self: self-end;
+}
+
+.wrap{
+    margin: auto;
+    display: flex;
+    border: 5px solid black;
+    height: 20vh;
+    width: 50vw;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    gap: 20px;
+    overflow: scroll;
+
+
+}
