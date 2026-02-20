@@ -1,0 +1,84 @@
+.box{
+    border: 1px solid black;
+    height: 50px;
+    width: 100px;
+    display: inline-block;
+    font-size:xx-large;  
+    padding-left: 15px;
+    padding-top: 10px;
+    background-color: chocolate;
+    cursor: progress;
+}
+
+#special{
+    color: bisque;
+    /*Static is default.Top Bottom wont work with it*/
+    /* position: static; */
+    /*Only two will work.Ekhane top means top theke thela dbo.Thela dile jekhane jabe ..so amra top and bottom theke eksathe thela DITE PARBONA..so left-right or top-bottom any two can be used*/
+    /* position: relative; -> mane hocche normal flow te thabe..like 5 ta box pasha pashi ase..ami 3rd tar position change korle owr ager position kintu keo fill korbe na..okkhane gap thakbe. */
+    /* position: relative;
+    top: 70px;
+    left: 0px; */
+    /* position: absolute; -> ekhane flow break kore..jeta change kortesi oitar gap ta fill hoye jay ar position to nijer moto chjange korbo */
+    /* position: absolute;
+    top: 70px;
+    left: 0px; */
+    /*Absolute = Fixed..But Fixed Has extra properties of When we scroll it stay fixed in one postiion.*/
+    /* position: fixed;
+    top: 80px;
+    left: 200px; */
+    /*Sticky = Relative..relative + fixed but within its parent class*/
+    /* position: sticky;
+    top: 0px; */
+
+}
+
+/*Thumb Rule/Golden Rule -> When we apply absolute to any class..Apply Relative to its parent*/
+
+.test{
+    position: relative;
+}
+
+p{
+    padding-top: 100px;
+}
+.z{
+    border: solid 1px black;
+    font-size: xx-large;
+    background-color: #e21313;
+    position: relative;
+    top: 30px;
+    left: 700px;
+    height: 50px;
+    width: 100px;
+    display: inline-block;
+    padding: 10px 0px 0px 10px;
+}
+
+#ahin{
+    background-color: aqua;
+    position: relative;
+    left: 780px;
+    top: 80px;
+    z-index: 1;   /* 1 means ahin er box uporer layer e thakbe */
+    z-index: -1; /*-1 means 2nd layer er box upore thakbe*/    
+}
+
+#siam{
+    background-color: chartreuse;
+    position: relative;
+    left: 600px;
+    top: 70px;
+    display: inline-block;
+    z-index: -2;
+}
+
+#samee{
+    z-index: -3;
+}
+
+/*layering like : power
+power -1 >> -2 >> -3
+so -1 shobar upore trpor -2 trpor -3
+*/
+

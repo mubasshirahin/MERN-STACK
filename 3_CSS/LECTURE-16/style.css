@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent{
+    background-color: aqua;
+    width: 100vw;
+    height: 100vh;
+    font-size: 60px;
+}
+
+.child{
+    background-color: rgb(6, 50, 48);
+    width: 50%;
+    height: 40%;
+    font-size: 2em;
+    text-shadow: 10px 10px 10px black;
+    
+}
+
+
+/*
+Absolute       --    Relative
+px,in,cm,mm          %,vw,vh,em,rem
+
+we use px in absolute.absolute means that is fixed and independent.
+
+% -> depends on parents height,width
+vw,vh -> viewport width,viewport height -> jotottuk viewporet ase or full
+screen jure apply
+
+em,rem -> parent er text size joto..1 em shoman toto...2em = parent text size * 2
+
+*/
