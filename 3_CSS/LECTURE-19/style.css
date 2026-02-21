@@ -1,0 +1,164 @@
+/* Universal Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    cursor: grab;
+}
+
+/* Background Wrapper */
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden; 
+}
+
+/* Main Content Area */
+.store{
+    min-height: 100%;
+    width: 100%; /* Changed to 100% to allow proper centering of children */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the H1 and the .shoes box */
+    margin: auto;
+}
+
+.store h1{
+    padding-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* The Grid Container - Centered and Bordered */
+.shoes{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%; /* Adjusted width for better spacing on large screens */
+    gap: 30px;  /* Increased gap for a cleaner look */
+    justify-content: center; /* Centers cards horizontally inside the border */
+    align-items: flex-start; /* Aligns cards to the top of their row */
+    margin: 20px auto;       /* Centering the entire box itself */
+    padding: 0px;           /* Inner spacing so cards don't touch the black border */
+}
+
+/* Individual Product Card */
+.card {
+    width: 222px; /* Set slightly wider than image to accommodate card padding + photo border */
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: transparent; 
+
+}
+
+/* Image Wrapper */
+.photo {
+    width: 200px;
+    height: 200px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.photo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: 0.3s ease-in-out;
+}
+
+/* Text and Cart Container */
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 10px;
+    width: 100%; 
+}
+
+/* Description Fix: Forces the text to wrap */
+.description {
+    width: 140px; /* Allocated space for text */
+}
+
+.description p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.2;
+    
+    /* CRITICAL WRAPPING PROPERTIES */
+    white-space: normal;       /* Ensures text drops to the next line */
+    overflow-wrap: break-word; /* Breaks long strings like model numbers */
+    width: 100%;               
+}
+
+/* Price Styling (The second <p> in your description) */
+.description p:last-child {
+    margin-top: 5px;
+    color: #555;
+}
+
+/* Cart Icon Styling */
+.cart img {
+    width: 25px;
+    height: auto;
+    cursor: pointer;
+}
+
+
+.cart img:hover{
+    content: url(cartRed.png);    
+}
+
+.description p:first-child:hover{
+    text-decoration: underline;
+}
+
+.photo img:hover{
+        transform: scale(1.05);
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 20px;
+    padding: 20px;
+}
+
+#apple:hover{
+    content: url(download.png);
+    width: 45px;
+}
+
+.card:hover{
+    border: 1px solid rgba(0, 0, 0, 0.113);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    
+}
+
+.photo {
+    position: relative; /* Required so the overlay stays inside the photo box */
+    overflow: hidden;   /* Keeps the angled text from sticking out of the card */
+}
+
+.out-of-stock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* This centers the text AND rotates it 45 degrees */
+    transform: translate(-50%, -50%) rotate(-45deg);
+    
+    width: 140%; /* Makes the background bar span across the corners */
+    background-color: rgba(255, 0, 0, 0.7); /* Red with 70% transparency */
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 0;
+    pointer-events: none; /* Allows mouse clicks to ignore the text */
+    z-index: 10;
+}
