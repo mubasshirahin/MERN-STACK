@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    /* Use a gradient or image background to make the glass effect pop */
+    /* background: linear-gradient(0deg, #e6a3a3 0%, #a64e4e 100%); */
+    background-image: url(https://wallpapercave.com/wp/wp9116512.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    /* Fixed width is better for forms than percentages */
+    width: 600px; 
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.15); /* Semi-transparent white */
+    backdrop-filter: blur(10px);          /* The "Frosted Glass" blur */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+input[type="email"], 
+input[type="password"] {
+    width: 300px;             /* Fits perfectly inside the box padding */
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background: white;
+}
+
+.bottompart {
+    display: flex;
+    /* This is the key: it pushes the checkbox left and the link right */
+    justify-content: space-between; 
+    align-items: center;
+    /* Ensure this matches the width of your email/password inputs */
+    width: 100%;             
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: aqua;
+}
+
+.bottompart label {
+    display: flex;
+    align-items: center;
+    /* Using gap: 0 here as you suggested to keep the checkbox and text touching */
+    gap: 0; 
+}
+
+.bottompart a {
+    text-decoration: none;
+    /* Moves it to the end of the flex row */
+    margin-left: auto; 
+    color: aqua;
+    text-decoration: underline
+}
+
+input[type="submit"] {
+    width: 100%;           /* Standard full-width button */
+    padding: 12px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 25px;
+    background-color: #000000;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #525050;
+    transform: translateY(-2px);
+}

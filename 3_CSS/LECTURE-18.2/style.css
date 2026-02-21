@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+}
+
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(https://wallpapercave.com/wp/wp8979263.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    text-shadow: 4px 4px 5px black;     
+}
+
+h1{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.login{
+    width: 50%;
+    height: 30%;
+    border: 1px solid black;
+    background: rgba(255, 255, 255, 0.125);
+    backdrop-filter: blur(10px);  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    gap: 20px;
+}
+
+.loginDetails{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    width: 50%;
+
+}
+
+.password{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    width: 50%;
+}
+
+input[type="email"],
+input[type="password"]{
+    border-radius: 8px;
+    padding: 10px;
+    border: none;
+    font-size: 15px;
+}
+
+.loginButton{
+    width: 50%;
+    padding-top: 10px;
+}
+
+
+button{
+    border-radius: 30px;
+    padding: 10px;
+    border: none;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #525050;
+}
+
+.forgetPassword:hover{
+    color: red;   
+    text-decoration: underline;
+}
