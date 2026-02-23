@@ -1,0 +1,417 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "YouTube Sans", "Roboto", sans-serif;
+}
+
+.container {
+    background: 
+        radial-gradient(at 0% 0%, rgba(249, 215, 232, 0.7) 0%, transparent 35%), 
+        radial-gradient(at 100% 0%, rgba(215, 235, 249, 0.7) 0%, transparent 35%), 
+        #ffffff;    
+    background-attachment: scroll;
+    width: 100vw;
+    height: 100vh;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.header img {
+    margin-top: 160px;
+    width: 360px; /* Adjust this number until it looks right to you */
+    height: auto;  /* This keeps the logo from looking stretched */
+}
+
+.description h1{
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+    margin-top: 48px;
+    font-family: "YouTube Sans", "Roboto", sans-serif;
+    font-weight:700;
+
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.description :nth-child(3){
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.description :nth-child(4){
+    font-size: 20px;
+    margin-top: 23px;
+}
+
+.description :nth-child(5){
+    font-size: 18px;
+    margin-top: 37px;
+    width: 250px;
+    height: 45px;
+    text-align:center;
+    border-radius: 40px;
+    background-color: #065FD4;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.description :nth-child(6){
+    font-size: 18px;
+    margin-top: 47px;
+}
+
+.description :nth-child(7){
+    font-size: 12px;
+    margin-top: 45px;
+    color: gray;
+}
+
+.description :nth-child(8){
+    font-size: 12px;
+    color: #065FD4;
+}
+
+.familyplan{
+    color: #065FD4;
+    text-decoration: none;
+}
+
+.description :nth-child(5):hover{
+    background-color: #0556BF;    
+}
+
+.features-container{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    margin: auto;
+    gap: 65px;
+
+}
+
+.feature-card img{
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.feature-card p{
+    width: 200px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#jointext{
+    display: flex;
+    justify-content: center;
+    font-size: 170%;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+.price-cards{
+    display: flex;
+    width: 80%;
+    justify-content:space-between;
+    gap: 25px;
+    margin: auto;
+}
+
+.price-cards h2{
+    padding-bottom: 20px;
+}
+
+.packages{
+    border: 1px solid black;
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* 1. Target the individual card, not the group */
+.packages {
+    background-color: #ffffff; /* Each box needs a white background */
+    border-radius: 24px;       /* Smooth rounded corners */
+    padding: 30px;
+    margin: 10px;              /* Adds space between the shadows */
+    border: none;              /* Remove that black border from */
+    
+    /* Apply the shadow here so every box gets its own */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); 
+    
+    display: flex;
+    flex-direction: column;
+    flex: 1;                   /* Makes all boxes equal size */
+    gap: 5px;
+}
+
+/* 2. Remove shadow from the main container */
+.price-cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;                 /* Space between boxes */
+    background: none;          /* Remove background/shadow from here */
+    box-shadow: none;
+    margin-bottom: 200px;
+
+}
+
+
+.price-cards hr {
+    background-color:#6060603d; /* The color you wanted */
+    border: none;           /* Removes the default 3D border */
+    height: 1px;            /* Makes it a thin, sharp line */
+}
+
+.price-cards p{
+    padding-left: 10px;
+}
+.restriction{
+    padding-left: 10px;
+}
+.restriction2{
+    color:#065FD4;
+    text-decoration: none;
+}
+
+
+
+.price-cards > .packages > :nth-child(3){
+    color: #606060;
+    font-size: 13px;
+    padding-top: 10px;
+}
+.price-cards > .packages > :nth-child(4){
+    font-size: 20px;
+    color: #0f0f0f;
+}
+.price-cards > .packages > :nth-child(5){
+    font-size: 15px;
+}
+.price-cards > .packages > :nth-last-child(2){
+    font-size: 12px;
+    color: #065FD4;
+}
+#extra{
+    font-size: 12px;  
+    color: #606060;   
+}
+
+.logo{
+    display: flex;
+    gap: 15px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.logo > i {
+    padding-top: 5px;
+}
+
+
+.fa-user{
+    font-size: 25px;
+    color: #0f0f0f;
+}
+
+.fa-users{
+    font-size: 30px; 
+    color: #0f0f0f;  
+}
+
+.fa-graduation-cap{
+    font-size: 30px;
+    color: #0f0f0f; 
+}
+
+#boxkorbo{
+    text-align: center;
+    background-color: #065FD4;
+    border-radius: 30px;
+    width: 250px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#boxkorbo2{
+    text-align: center;
+    background-color: #DEF1FF;
+    border-radius: 30px;
+    width: 250px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    color:#065FD4;
+    font-weight: bold;
+}
+
+#boxkorbo:hover{
+    background-color:#0556BF;
+}
+
+#boxkorbo2:hover{
+    background-color:#DADFE6;
+}
+
+.detailed-features{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#keepplaying{
+    margin-bottom: 150px;
+    width: 80%;
+    font-size: 60px;
+}
+
+.detailedbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 120px;
+}
+
+.detailed-features-card-details{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.detailed-features-card-details > h1{
+    font-size: 45px;
+}
+
+.detailed-features-card-details > p{
+    color: #606060;
+}
+
+.youtube-music{
+    width: 80%;
+    background: linear-gradient(90deg,#633732,#04148c);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 40px;
+    color: white;
+    margin-bottom: 100px;
+}
+
+.youtube-music-details{
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.youtube-music-details > img{
+    width: 150px;
+}
+
+.youtube-music-pricing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.youtube-music-pricing > h1{
+    font-size: 50px;
+}
+
+.choto{
+    font-size: 13px;
+}
+
+#choto1{
+    color:gray;
+}
+#choto2{
+    color:#065FD4;
+    margin-bottom: 100px;
+}
+
+.faq{
+    background-color: #F2F2F2;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    border-radius: 30px;
+    gap: 20px;
+    padding-left: 20px;
+    padding-top: 50px;
+}
+
+.faq > h1{
+    font-size: 60px;
+    margin-bottom: 40px;
+}
+
+.faq > details{
+    font-weight:bold;
+    font-size: 18px;
+}
+
+.answer{
+    margin-top: 30px;
+    font-weight: normal;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.answer > a{
+    color: #065FD4;
+    text-decoration: none;
+}
+
+.faq > hr{
+    background-color:#6060603d;
+    border: none;        
+    height: 1px;         
+}
+
+#footer a{
+    color:#065FD4;
+    text-decoration: none;
+}
+
+footer{
+    text-align: center;
+    background-color:  #F2F2F2;
+    height: 60px;
+    margin: auto;
+    padding-top: 25px;
+    border-radius: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
