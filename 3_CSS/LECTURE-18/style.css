@@ -81,7 +81,7 @@ input[type="password"] {
     /* Moves it to the end of the flex row */
     margin-left: auto; 
     color: aqua;
-    text-decoration: underline
+    text-decoration: underline;
 }
 
 input[type="submit"] {
