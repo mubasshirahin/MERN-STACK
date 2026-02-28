@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: palevioletred;
+    /* transition-property: all; */
+
+    /*TRNASFORM EK LINE EI APPLY KORTE HBE..DIFFERENT LINE E KORLE ONLY LAST ER TA APPLY HBE. */
+
+    /* skew meeans tilt */
+
+    /* transform: translate(170px,170px) rotate(30deg) scale(1.5) skew(50deg); */
+    transform: perspective(100px) translateZ(-85px);
+
+    /*perspective -> distance between the object and my eyes*/
+    /*translate means move the odject closer or far away from my eyes*/
+    
+}
+
+.box:hover{
+    width: 1000px;
+    height: 500px;
+    background-color: brown;
+    /* transition-duration: 0.5s;
+    background-color: brown;
+    /* transition-delay: 1s;
+    transition-timing-function:cubic-bezier(0, 1.7, 1, -0.78); */
+
+    /* transition: property duration timing-function delay; */
+    transition: all 1s ease-in 0.5s;
+}
+
+/*
+transition - duration   : kototkkhn dhore transition perform hbe
+transition - timingfunction
+transition - delay  : kotokkkhjn pore transition howa start korbe
+transition - property  : kothay kothay apply hobe
+
+*/
+

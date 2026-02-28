@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    background-color: red;
+    width: 100px;
+    height: 40px;
+
+    animation-name: ahin;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+
+    /*backward -> animation sheshe starting point e chole ashbe
+    forward -> animation sheshe ending point e chole ashbe
+    both -> jekahen shesh hbe okhane thambe*/
+
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+    animation: ahin 3s linear 0s infinite alternate both;
+}
+
+@keyframes ahin{
+    /* from{
+        background-color: red;
+        width: 100px;
+        height: 40px;
+    }
+    to{
+        background-color: rgb(202, 198, 83);
+        width: 500px;
+        height: 40px;
+    } */
+
+    100%{
+        background-color: rgb(180, 24, 180);
+        height: 40px;
+    }
+    80%{
+        background-color: rgb(46, 108, 241);
+    }
+    60%{
+        background-color: rgb(80, 227, 220);
+    }
+    40%{
+        background-color: rgb(23, 238, 20);
+    }
+    20%{
+        background-color: rgb(230, 155, 17);
+    }    
+    0%{
+        background-color: rgb(236, 19, 19);
+        width: 500px;
+        height: 40px;
+    }
+}
+
+
