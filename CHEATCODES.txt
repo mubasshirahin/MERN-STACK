@@ -1,0 +1,6 @@
+1) Kothaw Position Absolute Apply korte chaile tar age tar parent er Position Must Relative banabo lagbe
+
+2) .slideUnderline::after:hover -> bhul  
+.slideUnderline:hover::after -> right
+
+3)
